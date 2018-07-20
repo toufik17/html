@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset=UTF-8>
+    <title>Les listes</title>
+  </head>
+
+  <body>
+    <p>Sommaire :</p>
+    <ul>
+      <li>Les étoiles de la galaxie</li><
+      <li>Les planètes du système solaire</li>
+      <li>Les nébuleuses et les amas globulaires</li>
+    </ul>
+  </body>
+</html>
