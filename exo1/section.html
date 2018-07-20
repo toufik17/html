@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset=UTF-8>
+    <title>Composition sémantique</title>
+    <style>
+      *:not(html):not(body) { padding: 5px; margin: 5px; border: 1px solid black; border-radius: 5px; }
+      body {color: maroon; font-weight: bold;  }
+      header {background-color: aquamarine; }
+      nav { background-color: orange; }
+      aside { background-color: burlywood; width: 23%; float: right; height: 250px; }
+      section { background-color: antiquewhite;  width: 70%; }
+      article { background-color: lightcyan; }
+      footer { background-color: gold; }
+    </style>
+  </head>
+
+  <body>
+    <header>&lt;header&gt;</header>
+
+    <aside>
+      aside 
+      <header>&lt;header&gt;</header>
+      <nav>&lt;nav&gt;</nav>
+    </aside>
+
+    <section>
+      &lt;section&gt;
+      <header>&lt;header&gt;</header>
+      <article>&lt;article&gt;</article>
+      <footer>&lt;footer&gt;</footer>
+    </section>
+
+    <section>
+      &lt;section&gt;
+      <header>&lt;header&gt;</header>
+      <article>&lt;article&gt;</article>
+      <article>&lt;article&gt;</article>
+    </section>
+
+    <footer>&lt;footer&gt;</footer>
+  </body>      
+</html>
