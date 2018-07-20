@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">   
+   <head>
+      <meta charset=UTF-8>
+      <title>Les tableaux</title>
+      <style>
+         body { background-color: bisque; }
+         table { background-color: burlywood;  width: 420px;  box-shadow: 3px 3px 15px #aaa;  border: 1px solid black;  border-collapse: collapse; }
+         thead, tfoot { background-color: darkgoldenrod;  color: bisque;  }
+         td { border: 1px dotted darkgoldenrod;  padding: 2px;  padding-left: 0.5em; }
+         table caption { font-style: italic;  font-size: 1.2em;  color: saddlebrown; padding-bottom: 0.3em;  }
+      </style>
+   </head>
+
+   <body>    
+      <table>
+         <caption>Liste du personnel</caption>
+         <thead>
+            <tr>
+               <th>Nom</th>
+               <th>Prénom</th>
+               <th>Compétences</th>  
+            </tr>      
+         </thead>         
+         <tfoot>
+            <tr >
+               <td colspan="3">Deux employés</td>
+            </tr>
+         </tfoot>
+         <tbody>
+            <tr>
+               <td>RÉMY</td>
+               <td>Emmanuel</td>
+               <td>Informaticien</td>              
+            </tr>
+            <tr>
+               <td>DURAND</td>           
+               <td>Michel</td>       
+               <td>Mécanicien</td>            
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>
