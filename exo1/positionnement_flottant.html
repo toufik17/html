@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">   
+   <head>
+      <meta charset=UTF-8>
+      <title>Position relative</title>
+      <style>
+         body { background-color: bisque; font-weight: bold; }
+         p  { 
+            padding: 5px; text-align: justify; color:  bisque; 
+            background-color: darkolivegreen; border: thin solid white;
+            box-shadow: 1px 1px 3px black;
+         }
+         p.flottant {
+            float: left;  background-color: black;
+            margin-top: 0; margin-right: 5px; margin-bottom: 5px; 
+         }
+      </style>
+   </head>
+
+   <body>    
+      <p class="flottant">Un paragraphe flottant.</p>
+      <p>
+         Un paragraphe normal qui suit le flux courant et dont le texte s'écoule et  épouse 
+         les contours du paragraphe flottant quelque soit les dimensions de la page web.
+      </p>
+   </body>
+</html>
