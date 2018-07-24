@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">   
+   <head>
+      <meta charset=UTF-8>
+      <title>z-index</title>
+      <style>
+         body { background-color: goldenrod; font-weight: bold; }
+         p  { color: bisque; border: 1px solid bisque; margin: 5px; padding: 4px; }
+         p.index1 { background-color: orangered;  position: absolute; left: 10px; top: 10px; z-index: 3; }
+         p.index2 { background-color: black;  position: absolute; left: 30px; top: 30px;  z-index: 2; }
+         p.index3 { background-color: darkblue;  position: absolute; left: 50px; top: 50px; z-index: 1;  }
+      </style>
+   </head>
+
+   <body>    
+      <p class="index1">Paragraphe n°1</p>
+      <p class="index2">Paragraphe n°2</p>
+      <p class="index3">Paragraphe n°3</p>
+   </body>
+</html>
+
+<--
+Règles
+Dans la plupart des cas de figure classiques, la compréhension de l'empilement est intuitive, mais elle l'est moins dès que le contexte est plus complexe. Voici les règles à retenir :
+
+Sans z-index, les éléments s'empilent suivant leur ordre d'apparition dans le code HTML. Le premier se place sous les suivants.
+Lorsqu'une propriété z-index est appliquée à plusieurs éléments positionnés au sein d'un même référent, celui bénéficiant de la valeur la plus forte apparaît par dessus les autres.
+Lorsque les éléments positionnés dépendent de plusieurs référents qui eux-mêmes disposent d'une valeur de z-index, c'est le poids du z-index référent qui devient prioritaire.
+-->
