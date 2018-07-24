@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+   <head>
+      <meta charset=UTF-8>
+      <title>Boîtes flexibles</title>
+      <style>
+         body { background-color: bisque; font-weight: bold; }
+         article { 
+            display: -webkit-box; background-color: green;
+            border-radius: 5px;  box-shadow: 0 0 5px black; 
+         }
+         p  { 
+            -webkit-box-flex: 1; min-width: 200px; margin: 7px;  padding: 4px;         
+            text-align: justify; color:  bisque;  background-color: black;   
+            border: thin solid white; box-shadow: 2px 2px 5px black;
+         }
+      </style>
+   </head>
+
+   <body>
+      <article>
+         <p>Un premier paragraphe qui se place au début.</p>
+         <p>Tous les paragraphes sont des boîtes qui se répartissent équitablement dans l'article.</p>
+         <p>Toutes les boîtes sont alignées verticalement à l'instar des cellules d'un tableau.</p>
+      </article>
+   </body>
+</html>
